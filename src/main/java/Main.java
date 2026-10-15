@@ -1,3 +1,5 @@
+package main.java;
+
 import java.util.Scanner;
 
 public class Main {
@@ -27,7 +29,7 @@ public class Main {
                     case "*" -> System.out.println(a + " * " + b + " = "+ (a * b) );
                     case "/" -> {
                         if(b == 0){
-                            System.out.println("Error: not divisible on 0");
+                            System.out.println("Error: u can't divisible on 0");
                         } else {
                             System.out.println(a + " / " + b + " = "+ (a / b) );
                         }
