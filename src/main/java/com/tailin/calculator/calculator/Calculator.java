@@ -1,0 +1,27 @@
+package com.tailin.calculator.calculator;
+
+public class Calculator{
+
+    public static int calculate(int a, int b, String op) {
+        switch (op) {
+            case "+": {
+                return a + b;
+            }
+            case "-": {
+                return a - b;
+            }
+            case "*": {
+                return a * b;
+            }
+            case "/": {
+                if (b == 0) {
+                    throw new ArithmeticException("Division on zero is impossible");
+                }
+                return a / b;
+            }
+            default: {
+                throw new IllegalArgumentException("Unknown operator " + op);
+            }
+        }
+    }
+}
