@@ -13,14 +13,10 @@ public class Main {
                 if (statement.equalsIgnoreCase("exit")) {
                     break;
                 }
-                String[] strings = statement.split("\\s+");
+                String[] strings = statement.trim().split("\\s+");
                 int a = Integer.parseInt(strings[0]);
                 String op = strings[1];
                 int b = Integer.parseInt(strings[2]);
-                if(op.equals("/") && b == 0) {
-                    System.out.println("Division on zero is impossible");
-                    continue;
-                }
                 int result = Calculator.calculate(a, b, op);
                 System.out.println(a + " " + op + " " + b + " = " + result);
             } catch (NumberFormatException e){
