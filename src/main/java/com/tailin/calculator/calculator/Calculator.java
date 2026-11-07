@@ -2,7 +2,7 @@ package com.tailin.calculator.calculator;
 
 public class Calculator{
 
-    public static int calculate(int a, int b, String op) {
+    public static double calculate(double a, double b, String op) {
         switch (op) {
             case "+": {
                 return a + b;

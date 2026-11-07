@@ -14,10 +14,10 @@ public class Main {
                     break;
                 }
                 String[] strings = statement.trim().split("\\s+");
-                int a = Integer.parseInt(strings[0]);
+                double a = Double.parseDouble(strings[0]);
                 String op = strings[1];
-                int b = Integer.parseInt(strings[2]);
-                int result = Calculator.calculate(a, b, op);
+                double b = Double.parseDouble(strings[2]);
+                double result = Calculator.calculate(a, b, op);
                 System.out.println(a + " " + op + " " + b + " = " + result);
             } catch (NumberFormatException e){
                 System.out.println("Error: unknown operation or not number");
