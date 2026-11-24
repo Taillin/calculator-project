@@ -22,4 +22,9 @@ public class CalculatorTest {
     void MulReturnCorrectResults(){
         assertEquals(20, Calculator.calculate(5, 4, "*"), 0.001);
     }
+
+    @Test
+    void DivisionCorrectResults() {
+        assertEquals(5, Calculator.calculate(25, 5, "/"), 0.001);
+    }
 }
